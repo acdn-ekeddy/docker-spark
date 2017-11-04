@@ -24,6 +24,8 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 RUN pip install protobuf
+RUN pip install python-dateutil
+RUN pip install kafka-python
 
 # http://blog.stuart.axelbrooke.com/python-3-on-spark-return-of-the-pythonhashseed
 ENV PYTHONHASHSEED 0
